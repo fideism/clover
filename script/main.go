@@ -76,10 +76,6 @@ func gitee(hrefs []string) {
 }
 
 func dealDvp(href, file string) (string, error) {
-	//gitee/xany_bestshop-php/web/assets/store/scss/diy.scss
-	//mkdir -p gvp/xany/bestshop-php/web/assets/store/scss/
-	//mv gitee/xany_bestshop-php/web/assets/store/scss/goods.scss gvp/xany/bestshop-php/web/assets/store/scss/goods.scss
-
 	fd := strings.Split(file, `/`)
 
 	newFile := []string{href}

@@ -108,13 +108,13 @@ func getAllFiles(dirPth string) (files []string, err error) {
 	PthSep := string(os.PathSeparator)
 	for _, fi := range dir {
 		if fi.IsDir() { // 目录, 递归遍历
-			if fi.Name() == `.git` {
+			if fi.Name() == `.git` || fi.Name() == `.gitosc` {
 				continue
 			}
 			dirs = append(dirs, dirPth+PthSep+fi.Name())
 			getAllFiles(dirPth + PthSep + fi.Name())
 		} else {
-			if fi.Name() == `.gitignore` || fi.Name() == `LICENSE` {
+			if fi.Name() == `.gitignore` || fi.Name() == `LICENSE`  {
 				continue
 			}
 			//// 过滤指定格式

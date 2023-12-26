@@ -1,5 +1,9 @@
 # clover
 
+更新`gitee`热点项目,个人学习使用
+
+[License](./LICENSE)
+
 **如有侵权请告知**
 
 - [A-Tune](./gvp/openeuler/A-Tune/)

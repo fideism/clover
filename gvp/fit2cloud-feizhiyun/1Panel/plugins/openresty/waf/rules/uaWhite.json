@@ -1,8 +1,0 @@
-{
-  "rules": [
-    {
-      "state": "on",
-      "rule": "PostmanRuntime/7.36.1"
-    }
-  ]
-}
